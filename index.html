@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITK - Simon</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
 
-</head>
-
-<body>
-    
+  <body>
     <h1>Let's play Simon says!</h1>
     <h2>Press a button to begin</h2>
 
-<div class="caja">
+    <div class="box">
+      <div class="container">
+        <button class="t_red" data-color="red"></button>
+        <button class="t_blue" data-color="blue"></button>
+      </div>
+      <div class="container">
+        <button class="t_yellow" data-color="yellow"></button>
+        <button class="t_green" data-color="green"></button>
+      </div>
+      <button class="start">Start</button>
+    </div>
 
-<div class="marco">
-    <button class="t_left"> </button>
-    <button class="t_right"> </button>
-</div>
-<div class="marco">
-    <button class="b_left"> </button>
-    <button class="b_right"> </button>
-</div>
-<button class="start"> Start </button>
-
-</div>
-
-
-<script src="./index.js"></script>
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
