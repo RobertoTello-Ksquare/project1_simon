@@ -79,6 +79,13 @@ function handleClick(color) {
   }
 
   if (playerSequence.length === computerSequence.length) {
+    if (playerSequence.length === 20) {
+      resetGame('Congrats! You completed all the levels');
+      return
+    }
+  }
+
+  if (playerSequence.length === computerSequence.length) {
     playerSequence = [];
     info.textContent = "Well done! Keep going!";
     setTimeout(() => {
