@@ -10,11 +10,17 @@ const box = document.querySelector(".box");
 const info = document.querySelector(".info_text");
 
 //Functions
+//Game reset
+function resetGame(text) {
+  alert(text);
+  computerSequence = [];
+  playerSequence = [];
+  level = 0;
+}
 //Changing the info text
 function playerTurn(level) {
-  info.textContent = `Focus! you need to click ${level} tile${
-    level > 1 ? "s" : ""
-  }`;
+  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
+    }`;
 }
 //Activate tile
 function activateTile(color) {
@@ -67,6 +73,11 @@ function handleClick(color) {
 
   const remainingClicks = computerSequence.length - playerSequence.length;
 
+  if (playerSequence[index] !== computerSequence[index]) {
+    resetGame('Oops! Game over, you pressed the wrong tile');
+    return;
+  }
+
   if (playerSequence.length === computerSequence.length) {
     playerSequence = [];
     info.textContent = "Well done! Keep going!";
@@ -75,9 +86,8 @@ function handleClick(color) {
     }, 1000);
     return;
   }
-  info.textContent = `Focus! you need to click ${level} tile${
-    level > 1 ? "s" : ""
-  }`;
+  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
+    }`;
 }
 //Start Game
 function startGame() {
