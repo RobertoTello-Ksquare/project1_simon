@@ -1,12 +1,12 @@
 body {
-  background-color: transparent;
+  background-color: gray;
   text-align: center;
 }
 .box {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: gray;
+  background-color: transparent;
   width: 50vh;
   max-width: 500px;
   height: 50vh;
@@ -96,6 +96,7 @@ body {
 }
 
 .start {
+  font-size: large;
   position: absolute;
   background-color: rgb(219, 218, 218);
   width: 200px;
@@ -104,11 +105,37 @@ body {
   cursor: pointer;
   z-index: 1;
   padding: 10px;
-  border: solid 15px;
+  border: solid 5px;
   padding: 10px;
-  border-color: gray;
+  border-color: black;
 }
 
 .start:hover {
   background-color: rgb(20, 212, 30);
+}
+
+.reset {
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+margin-top: 10px;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+.reset:hover {
+  background-color: rgb(212, 20, 20);
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium';
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium';
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium';
 }
