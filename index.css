@@ -1,6 +1,7 @@
 body {
   background-color: gray;
   text-align: center;
+
 }
 .box {
   display: flex;
@@ -115,12 +116,16 @@ body {
 }
 
 .reset {
-  font-size: large;
+ 
+  transform: translateX(50%);
+    font-size: large;
   background-color: rgb(255, 255, 255);
   padding: 10px;
+  margin-left: -5%;
 margin-top: 10px;
 border-radius: 10px;
 cursor: pointer;
+
 
 }
 
