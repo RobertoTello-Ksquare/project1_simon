@@ -8,8 +8,17 @@ const colors = ["red", "blue", "yellow", "green"];
 const startButton = document.querySelector(".start");
 const box = document.querySelector(".box");
 const info = document.querySelector(".info_text");
+const resetButton = document.querySelector(".reset")
 
 //Functions
+//Reset button
+function resetClick() {
+  computerSequence = [];
+  playerSequence = [];
+  level = 0;
+  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
+}`;
+}
 //Game reset
 function resetGame(text) {
   alert(text);
@@ -109,3 +118,4 @@ box.addEventListener("click", (event) => {
 
   if (color) handleClick(color);
 });
+resetButton.addEventListener("click", resetClick);
