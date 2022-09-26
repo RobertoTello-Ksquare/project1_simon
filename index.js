@@ -16,8 +16,7 @@ function resetClick() {
   computerSequence = [];
   playerSequence = [];
   level = 0;
-  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
-}`;
+  info.textContent = `Turn ${level}`;
 }
 //Game reset
 function resetGame(text) {
@@ -28,8 +27,7 @@ function resetGame(text) {
 }
 //Changing the info text
 function playerTurn(level) {
-  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
-    }`;
+  info.textContent = `Turn ${level} `;
 }
 //Activate tile
 function activateTile(color) {
@@ -102,8 +100,7 @@ function handleClick(color) {
     }, 1000);
     return;
   }
-  info.textContent = `Focus! you need to click ${level} tile${level > 1 ? "s" : ""
-    }`;
+  info.textContent = `Turn ${level}    `;
 }
 //Start Game
 function startGame() {
